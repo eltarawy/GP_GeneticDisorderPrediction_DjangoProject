@@ -1,0 +1,51 @@
+{% extends 'baseForHome.html' %}
+{% load static %}
+{% block title %} Contact Us {% endblock title %}
+
+{% block content %}
+    <section class="contact py-4 px-5" id="contact">
+      <div class="container-contact">
+        <div class="contact-info">
+          <h3 class="address pb-5">ADDRESS</h3>
+          <p>4th Floor, Plot No.22, 145 Murphy Canyon Rd. San Diego CA 2028</p>
+          <div class="details-contact">
+            <div class="item">
+              <p>+20 1066 794128</p>
+            </div>
+            <div class="item">
+              <p>+20 1274 651857</p>
+            </div>
+            <div class="item">
+              <p>omniaabdulkhalek53@gmail.com</p>
+            </div>
+          </div>
+          <h6>FOLLOW ME</h6>
+        </div>
+        <div class="form-contact">
+          <div class="title text-center">
+            <h2>Contact us to help you</h2>
+          </div>
+          <div class="inputs pt-4">
+            <input class="name" type="text" placeholder="Name" />
+            <input class="email" type="email" placeholder="Email" />
+          </div>
+          <textarea
+            placeholder="Tell us more about your needs....."
+            rows="7"
+          ></textarea>
+          <div class="submit">
+            <button type="submit">send message</a>
+          </div>
+        </div>
+        <div class="clr"></div>
+      </div>
+    </section>
+    <div class="footer-home">
+      <h3>
+        Copyright <i class="fa-regular fa-copyright"></i> by omnya abdulkhalk
+        2024 Gentic. All Rights Reserved.
+      </h3>
+    </div>
+    <script src="{%  static 'js\main.js' %}"></script>
+    <script src="{%  static 'fontawesome\js\all.min.js' %}"></script>
+{% endblock content %}

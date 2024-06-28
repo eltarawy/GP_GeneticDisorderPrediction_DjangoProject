@@ -1,0 +1,114 @@
+{% extends 'baseForQ.html' %}
+{% load static %}
+{% block title %} Prediction {% endblock title %}
+
+{% block content %}
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br> 
+<div class="result-container m-auto w-50 text-center pb-5 alert mt-5">
+  <div class="result-container">
+    <h2>Genetic Disorder Prediction Results</h2>
+
+      <!-- <div class="result">
+          <p>Result from Model 1:</p>
+          <p>{{ result1 }}</p>
+      </div>
+
+      <div class="result">
+          <p>Result from Model 2:</p>
+          <p>{{ result2 }}</p>
+      </div> -->
+
+      <!--  more details or styling based on your requirements -->
+
+      <!-- <div class="confirmation-button">
+          <a href="{% url 'home' %}">Back to Home</a>
+      </div> -->
+  
+  
+      {%if result1 == 0%}
+      <div cclass="result" >         
+          <p>There are Mitochondrial genetic inheritance disorders.</p>      
+      </div>
+
+      {%elif result1 == 1%}
+      <div class="result">
+          <p>There are Multifactorial genetic inheritance disorders.</p>
+      </div>
+
+      {%elif result1 == 2%}
+      <div class="result">         
+          <p>There are Single-gene inheritance disorders.</p>          
+      </div>
+
+      {%elif result1 == 3%}
+      <div class="result" >
+          <p>There are not any disorders.</p>
+      </div>
+      {%endif%}
+<!------------------------------------------------------------------------------------------------------------------>
+      {%if result2 == 0%}
+      <div class="result" >
+          <p>May lead to Alzheimer's.</p>
+      </div>
+
+      {%elif result2 == 1%}
+      <div class="result" >
+          <p>May lead to Cancer.</p>
+      </div>
+
+      {%elif result2 == 2%}
+      <div class="result" >
+          <p>May lead to Cystic fibrosis.</p>
+      </div>
+
+      {%elif result2 == 3%}
+      <div class="result">
+          <p>May lead to Diabetes.</p>
+      </div>
+    
+
+      {%elif result2 == 4%}
+      <div class="result" >
+          <p>May lead to Hemochromatosis.</p>
+      </div>
+
+      {%elif result2 == 5%}
+      <div class="result" >
+          <p>May lead to Leber's hereditary optic neuropathy.</p>
+      </div>
+
+      {%elif result2 == 6%}
+      <div class="result">
+          <p>May lead to Leigh syndrome.</p>
+      </div>
+
+      {%elif result2 == 7%}
+      <div class="result" >
+          <p>May lead to Mitochondrial myopathy.</p>
+      </div>
+
+      {%elif result2 == 8%}
+      <div class="result" >
+          <p>May lead to Tay-Sachs.</p>
+      </div>
+
+      {%elif result2 == 9%}
+      <div class="result">
+          <p>May lead to no diseases.</p>
+      </div>
+      {%endif%}
+
+  </div>
+</div>
+
+<script src="{%  static 'js/main.js' %}"></script>
+<script src="{%  static 'js/all.min.js' %}"></script>
+{% endblock content %}
+{% load static %}

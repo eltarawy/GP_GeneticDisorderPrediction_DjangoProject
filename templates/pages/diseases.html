@@ -1,0 +1,74 @@
+{% extends 'baseForHome.html' %}
+{% block title %} Diseases {% endblock title %}
+{% load static %}
+
+{% block content %}
+<section class="disease-card-container">
+    <div class="part-1">
+     <div class="card">
+         <img src="{% static 'images/close-up-man-holding-up-purple-ribbon.jpg' %}" alt="Cancer">
+         <h2>Cancer</h2>
+         <p>Cancer is a complex group of diseases caused by abnormal cell growth. It can be triggered by genetic mutations, environmental facto...</p>
+         <a href="{% url 'Cancer' %}">Read more</a>
+     </div>
+ 
+     <div class="card">
+         <img src="{% static 'images/elderly-man-confronting-alzheimer-disease.jpg' %}" alt="Alzheimer's">
+         <h2>Alzheimer's </h2>
+         <p>The exact cause is not fully understood, but it is believed to involve a combination of genetic, environmental, and lifestyle facto....</p>
+         <a href="{% url 'Alzheimer' %}"> Read more</a>
+     </div>
+ 
+     <div class="card">
+         <img src="{% static 'images/istockphoto-1483000268-1024x1024.jpg' %}" alt="Cystic fibrosis ">
+         <h2>Cystic fibrosis</h2>
+         <p>Cystic fibrosis is caused by mutations in the CFTR (cystic fibrosis transmembrane conductance regulator) gene. These mutations lead...</p>
+         <a href="{% url 'CysticFibrosis' %}">Read more</a>
+     </div>
+    </div>
+    <div class="part-2">
+     <div class="card">
+         <img src="{% static 'images/closeup-shot-doctor-with-rubber-gloves-taking-blood-test-from-patient.jpg' %}" alt="Diabetes">
+         <h2>Diabetes</h2>
+         <p>Diabetes is a metabolic disorder characterized by high blood sugar levels over a prolonged period. Type 1 diabetes is due to the auto...</p>
+         <a href="{% url 'Diabetes' %}">Read more</a>
+     </div>
+ 
+     <div class="card">
+         <img src="{% static 'images/istockphoto-1292417977-1024x1024.jpg' %}" alt="Hemochromatosis">
+         <h2>Hemochromatosis </h2>
+         <p>Hemochromatosis is a genetic disorder characterized by excessive iron absorption and accumulation in various organs, especially the ....</p>
+         <a href="{% url 'Hemochromatosis' %}">Read more</a>
+     </div>
+ 
+     <div class="card">
+         <img src="{% static 'images/istockphoto-500323057-1024x1024.jpg' %}" alt="Leber's hereditary optic neuropathy">
+         <h3 class="py-2">Leber's hereditary optic neuropathy</h3>
+         <p>Hemochromatosis is a genetic disorder characterized by excessive iron absorption ...</p>
+         <a href="{% url 'LeberHereditaryOpticNeuropathy' %}">Read more</a>
+     </div>
+    </div>
+    <div class="part-3">
+     <div class="card">
+         <img src="{% static 'images/medium-shot-girl-with-down-syndrome-painting.jpg' %}" alt="Leigh syndrome">
+         <h2>Leigh syndrome</h2>
+         <p>Hemochromatosis is a genetic disorder characterized by excessive iron absorption and accumulation in various organs, especially the ...</p>
+         <a href="{% url 'LeighSyndrome' %}">Read more</a>
+     </div>
+ 
+     <div class="card">
+         <img src="{% static 'images/pikaso_texttoimage_35mm-film-photography-Mitochondrial-myopathy-high-.jpeg' %}" alt="Mitochondrial myopathy">
+         <h2>Mitochondrial myopathy</h2>
+         <p>Mitochondrial myopathy is a group of neuromuscular disorders caused by mitochondrial dysfunction. It leads to muscle weakness, exercise ...</p>
+         <a href="{% url 'MitochondrialMyopathy' %}">Read more</a>
+     </div>
+ 
+     <div class="card">
+         <img src="{% static 'images/istockphoto-1358229275-1024x1024.jpg' %}" alt="Tay-Sachs">
+         <h2>Tay-Sachs</h2>
+         <p>Tay-Sachs disease is a rare genetic disorder caused by mutations in the HEXA gene, leading to the accumulation of gangliosides in the brain ...</p>
+         <a href="{% url 'TaySachs' %}">Read more</a>
+     </div>
+    </div>
+</section>
+{% endblock content %}

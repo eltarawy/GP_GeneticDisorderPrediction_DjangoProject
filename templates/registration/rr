@@ -1,0 +1,39 @@
+    <section class="vh-100 gradient-custom">
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-25">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5 w-75 m-auto ">
+                <div class="card">
+                    <div class="card-body p-5 text-center ">
+          
+                      <div class="mb-md-5 mt-md-4 pb-5">
+          
+                        <h2 class="fw-bold mb-5 text-uppercase text-color">Login</h2>
+
+
+                        <form class="row g-3 my-4" id="register" method="POST">
+                            {% csrf_token %}
+                            {% for non_x_error in form.non_x.errors %}
+                              <p class="help is-denger">{{non_x_error}}</p>
+                            {% endfor %}
+                            {% for x in user_forms %}                                       
+                                {{ x }}                                                            
+                              {% for error in x.errors %}
+                                <p class="help is-dener">{{error}}</p>
+                              {% endfor  %}
+                            {% endfor %}                                                                                                                       
+                          <p class=" MessageFail d-none">All inputs is required</p>
+                          <p class=" MessageSuccess d-none">Success</p>
+                          <button  class="btn w-100 px-5 " id="SignUp" type="submit">Sign Up</button>                      
+                         </form>    
+          
+                      <div class="account">
+                        <p class="mb-0">I have an account? <a href="sign-in.html" class=" fw-bold">Sign in</a>
+                        </p>
+                      </div>
+          
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </section>

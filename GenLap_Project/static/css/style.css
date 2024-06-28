@@ -1,0 +1,527 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;0,800;1,500;1,700&display=swap');
+
+:root {
+    --rose-color: #f25454;
+}
+
+.navbar .navbar-nav>li a:hover,
+.navbar .navbar-nav>li a:focus,
+.navbar .navbar-nav>li.active>a,
+.arrows .arrow i:hover,
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:hover,
+.nav-tabs>li.active>a:focus {
+    color: #AED354;
+}
+
+.navbar {
+    background-color: #0D3205;
+}
+
+.navbar a {
+    color: #E6E5D0;
+}
+
+.name-brand {
+    color: #AED354;
+}
+
+.navbar-brand {
+    display: flex;
+}
+
+.navbar-brand img {
+    width: 50px;
+}
+
+.text {
+    background-color: #1B4C10;
+    padding: 15px;
+    color: #F9F8E8;
+}
+
+.home-link-2 {
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 85vh;
+}
+
+.inp {
+    background-color: #AED354;
+    padding: 15px;
+}
+
+.popup {
+    display: none;
+}
+
+.layer {
+    width: 100%;
+    height: 100%;
+    background-color: #afd35466;
+}
+
+.prediction {
+    display: flex;
+    min-height: 100vh;
+    background-image: url(/5052197.jpg);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-family: Rubik;
+}
+
+.form-container {
+    background-color: #E6E5D0;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.question-container {
+    margin-bottom: 30px;
+}
+
+.question {
+    font-size: 18px;
+    color: #333333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.checkbox-label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-button {
+    background-color: #AED354;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: #45a049;
+}
+
+.submit-button {
+    background-color: #1B4C10;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #1B4C10;
+}
+
+.inp div {
+    text-align: center;
+    margin: auto;
+}
+
+.textt input[type="number"] {
+    background-color: #1B4C10;
+    color: #F9F8E8;
+    height: 45px;
+    width: 100%;
+}
+
+.textt input[type="number"]::placeholder {
+    color: #E6E5D0;
+    padding-left: 15px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* sign in */
+.card {
+    margin-top: 100px;
+    background-color: #0D3205;
+    color: #E6E5D0
+}
+
+#login, .btn {
+    color: #0D3205;
+    background-color: #AED354;
+}
+
+.account a {
+    color: #F9F8E8;
+}
+
+.login, .sign-in {
+    background-image: url(/microscope_947539.png);
+}
+
+.containerhome {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+
+.Maintext {
+    color: #1B4C10;
+    text-align: center;
+    padding-top: 16%;
+    font-size: 200px;
+}
+
+.text1 h4, h6 {
+    text-align: center;
+    color: #0D3205;
+}
+
+.details, .details2 {
+    width: 100%;
+    background-color: #F9F8E8;
+    height: 85vh;
+}
+
+.image1, .image2 {
+    justify-content: center;
+    display: flex;
+    padding: 40px;
+    padding-bottom: 50px;
+}
+
+.image1 {
+    align-items: start;
+}
+
+.text-details, .text-details-2 {
+    width: 50%;
+    padding-top: 120px;
+}
+
+.imagedetails, .imagedetails2 {
+    width: 45%;
+}
+
+.imagedetails img, .imagedetails2 img {
+    width: 80%;
+    border-radius: 10%;
+    padding-top: 15px;
+}
+
+.text-details .details-img .fa-dna, .text-details-2 .details-img-2 .fa-dna {
+    color: #AED354;
+    padding-right: 25px;
+}
+
+.text-details .details-img h2 {
+    padding-bottom: 25px;
+    color: #0D3205;
+}
+
+.text-details .details-img h4 {
+    color: #1B4C10;
+}
+
+.details2 {
+    background-color: #E6E5D0;
+}
+
+.image2 {
+    justify-content: end;
+}
+
+.text-details-2 {
+    padding-right: 35px;
+}
+
+.text-details-2 .details-img-2 h2 {
+    padding-bottom: 25px;
+    color: #0D3205;
+}
+
+.text-details-2 .details-img-2 h4 {
+    color: #1B4C10;
+}
+
+.footer-home {
+    width: 100%;
+    height: 10vh;
+    background-color: #0D3205;
+    text-align: center;
+    padding: 20px;
+    color: #F9F8E8;
+    bottom: 0%;
+}
+
+iframe {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+}
+
+.article {
+    padding: 40px;
+}
+
+.article-1 h2 {
+    color: #0D3205;
+}
+
+.article-2, .article-4, .article-6 {
+    background-color: #F9F8E8;
+    padding: 20px 50px;
+}
+
+.article-1, .article-3, .article-5, .article-7 {
+    padding: 20px 50px;
+}
+
+.about-container {
+    height: 100vh;
+    width: 100%;
+    padding: 25px;
+    margin-top: 150px;
+    display: flex;
+}
+
+.left-about {
+    width: 60%;
+    margin: auto;
+    padding-top: 20px;
+    background-color: #afd3549d;
+}
+
+.right-about {
+    width: 30%;
+}
+.right-about img{
+    width: 400px;
+}
+.right-1 ,.right-2 ,.right-3 ,.right-4 ,.right-5{
+    height: auto;
+    padding: 20px;
+    background-color: #F9F8E8;
+}
+
+.right-2 , .right-3,.right-4 ,.right-5{
+    margin-top:30px;
+}
+.right-1 p,.right-2 p,.right-3 p,.right-4 p,.right-5 p{
+    color: #000;
+    font-size: 20px;
+}
+.book img {
+    width: 80%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.img-2 {
+    background-color: #525354;
+}
+
+.img-2 img {
+    width: 100%;
+    height: 100px;
+    padding: 15px;
+}
+
+.right-5 h6 {
+    text-align: start;
+    padding-left: 25px;
+}
+
+.article-1 img {
+    width: 700px;
+    margin: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+/* contact */
+.contact {
+    background-color: #E6E5D0;
+    margin-top: 100px;
+}
+
+.title h2, .address {
+    font-size: 50px;
+    padding-bottom: 5px;
+    color: #1B4C10;
+}
+
+.contact .contact-info {
+    width: 15%;
+    display: inline-block;
+}
+
+.details-contact {
+    padding-right: 10px;
+}
+
+.contact .item {
+    display: flex;
+}
+
+.details-contact span {
+    color: #0D3205;
+    padding: 5px;
+}
+
+.form-contact {
+    width: 70%;
+    float: right;
+}
+
+.contact input {
+    width: 44%;
+}
+
+.form-contact input, textarea {
+    border-radius: 5px;
+    border: 1px solid #AED354;
+}
+
+input {
+    padding: 10px 40px;
+    border: 2px #AED354;
+}
+
+textarea {
+    padding: 10px 40px;
+    width: 100%;
+}
+
+.inputs .name {
+    margin-right: 50px;
+    margin-bottom: 10px;
+}
+
+.inputs .email {
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+
+.inputs {
+    margin: 15px 0;
+}
+
+input:hover {
+    cursor: pointer;
+}
+
+.submit {
+    margin: 50px;
+    text-align: center;
+}
+
+.submit button {
+    background-color: #1B4C10;
+    padding: 25px 35px;
+    border: 2px solid #1B4C10;
+    border-radius: 50px;
+    color: #F9F8E8;
+    transition-duration: 0.4s;
+    font-size: 25px;
+}
+
+.clr {
+    clear: both;
+}
+
+.submit button:hover {
+    background-color: #AED354;
+    color: #1B4C10;
+}
+
+.result-container{
+    padding-top: 50px;
+}
+.result-page{
+    color: #F9F8E8;
+    margin-top: 250px;
+}
+.alert{
+    color: #1B4C10;
+    background-color: #F9F8E8;
+}
+
+.part-1, .part-2, .part-3 {
+    align-items: center;
+    width: 35%;
+}
+
+.disease-card-container {
+    display: flex;
+    background-color: #F9F8E8;
+    padding-top: 100px;
+}
+
+.disease-card-container .card {
+    width:450px;
+    margin-left: 30px;
+    margin-top: 30px;
+    border: 2px solid #F9F8E8;
+    padding: 20px;
+    text-align: center;
+}
+
+.disease-card-container .card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    color: #F9F8E8;
+}
+
+.disease-card-container .card h2 {
+    margin-top: 20px;
+}
+
+.disease-card-container .card a {
+    width: 50%;
+    margin: auto;
+    background-color: #AED354;
+    color: #1B4C10;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius:20px;
+}
+.disease-card-container .card a:hover{
+    background-color:#E6E5D0 ;
+}
+.cancer-page, .alzheimer-page, .cystic-page, .Diabetes-page, .Hemochromatosis-page, .LHON-page ,.Leigh-Syndrome-page ,.Tay-Sachs-page ,.Mitochondrial-page {
+    width: 90%;
+    margin: auto;
+    margin-top: 200px;
+    margin-bottom: 150px;
+    background-color: #E6E5D0;
+    box-shadow: 0px 0px 55px 10px #000;
+    padding-bottom: 100px;
+}
+
+.cancer-page h2, .alzheimer-page h2, .cystic-page h2, .Diabetes-page h2, .Hemochromatosis-page h2, .LHON-page h2 , .Leigh-Syndrome-page h2 ,.Tay-Sachs-page h2 ,.Mitochondrial-page h2{
+    text-shadow: 5px 2px 5px #AED354;
+}
+.cancer-pagep, .alzheimer-page p, .cystic-page p, .Diabetes-page p, .Hemochromatosis-page p, .LHON-page p , .Leigh-Syndrome-page p ,.Tay-Sachs-page p ,.Mitochondrial-page p{
+ font-size: 25px2
+}

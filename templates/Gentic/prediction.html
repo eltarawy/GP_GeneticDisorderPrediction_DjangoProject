@@ -1,0 +1,416 @@
+{% extends 'baseForQ.html' %}
+{% load static %}
+{% block title %} Prediction {% endblock title %}
+
+{% block content %}
+
+<div class="prediction">
+<div class="form-container">
+  <form action="{% url 'geno_prediction' %}" method="POST">
+    {% csrf_token %}
+    <div class="question-container px-5 pt-5">
+      
+      <div class="question" id="question1">
+        <div class="text">
+          <p>Is the gene present in the mother's side?</p>
+        </div>
+        <div class="inp" style="display: flex">
+          <div style="width: 50%; display: flex">
+            <input type="radio" id="yes1" name="e" value="1" required />
+            <label id="2" for="yes1">Yes</label>
+          </div>
+          <div style="display: flex">
+            <input type="radio" id="no1" name="e" value="0" />
+            <label for="no1">No</label>
+          </div>
+        </div>
+      </div>
+      <div class="question hidden" id="question2">
+        <div class="text">
+          <p>Is the gene present in the father's side?</p>
+        </div>
+
+        <div class="inp" style="display: flex">
+          <div style="width: 50%; display: flex">
+            <input type="radio" id="yes2" name="f" value="1" required />
+            <label id="2" for="yes2">Yes</label>
+          </div>
+          <div style="display: flex">
+            <input type="radio" id="no2" name="f" value="0" />
+            <label for="no2">No</label>
+          </div>
+        </div>
+      </div>
+      <div class="question hidden" id="question3">
+        <div class="text">
+          <p>Is gene present in patients' mother side of the family?</p>
+        </div>
+
+        <div class="inp" style="display: flex">
+          <div style="width: 50%; display: flex">
+            <input type="radio" id="yes3" name="g" value="1" required />
+            <label id="2" for="yes3">Yes</label>
+          </div>
+          <div style="display: flex">
+            <input type="radio" id="no3" name="g" value="0" />
+            <label for="no3">No</label>
+          </div>
+        </div>
+      </div>
+      <div class="question hidden" id="question4">
+        <div class="text">
+          <p>Is gene present in patients'father side of family?</p>
+        </div>
+
+        <div class="inp" style="display: flex">
+          <div style="width: 50%; display: flex">
+            <input type="radio" id="yes4" name="h" value="1" required />
+            <label id="2" for="yes4">Yes</label>
+          </div>
+          <div style="display: flex">
+            <input type="radio" id="no4" name="h" value="0" />
+            <label for="no4">No</label>
+          </div>
+        </div>
+      </div>
+      <div class="question hidden" id="question5">
+        <div class="text">
+          <p>Respiratory rate?</p>
+        </div>
+
+        <div class="inp" style="display: flex">
+          <div style="width: 50%; display: flex">
+            <input type="radio" id="yes5" name="i" value="0" required />
+            <label id="2" for="yes5">Normal 30~60</label>
+          </div>
+          <div style="display: flex">
+            <input type="radio" id="no6" name="i" value="1" />
+            <label for="no6">Tathypnea</label>
+          </div>
+        </div>
+      </div>
+      <div class="question hidden" id="question6">
+        <div class="text">
+          <p>H/O Maternal illness?</p>
+        </div>
+
+        <div class="inp" style="display: flex">
+          <div style="width: 50%; display: flex">
+            <input type="radio" id="yes7" name="o" value="1" required />
+            <label id="2" for="yes7">Yes</label>
+          </div>
+          <div style="display: flex">
+            <input type="radio" id="no7" name="o" value="0" />
+            <label for="no7">No</label>
+          </div>
+        </div>
+      </div>
+      <div class="question hidden" id="question7">
+        <div class="text">
+          <p>H/O radition exposure?</p>
+        </div>
+
+        <div
+          class="inp"
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          "
+        >
+          <div style="display: flex">
+            <input type="radio" id="no8" name="p" value="Yes" required />
+            <label for="no8">Yes</label>
+          </div>
+
+          <div style="display: flex">
+            <input type="radio" id="yes9" name="p" value="No" />
+            <label id="2" for="yes9">No</label>
+          </div>
+
+          <div style="display: flex">
+            <input type="radio" id="no11" name="p" value="Not aplicable" />
+            <label for="no11">Not aplicable</label>
+          </div>
+        </div>
+      </div>
+      <div class="question hidden" id="question8">
+        <div class="text">
+          <p>H/O substantce abuse?</p>
+        </div>
+
+        <div
+          class="inp"
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          "
+        >
+          <div style="display: flex">
+            <input type="radio" id="no12" name="q" value="Yes" required />
+            <label for="no12">Yes</label>
+          </div>
+          <div style="display: flex">
+            <input type="radio" id="yes12" name="q" value="No" />
+            <label id="2" for="yes12">No</label>
+          </div>
+          <div style="display: flex">
+            <input type="radio" id="no13" name="q" value="Not aplicable" />
+            <label for="no13">Not aplicable</label>
+          </div>
+        </div>
+      </div>
+      <div class="question hidden" id="question9">
+        <div class="text">
+          <p>is there assisted conception?</p>
+        </div>
+
+        <div class="inp" style="display: flex">
+          <div style="width: 50%; display: flex">
+            <input type="radio" id="yes14" name="r" value="1" required />
+            <label id="2" for="yes14">Yes</label>
+          </div>
+          <div style="display: flex">
+            <input type="radio" id="no15" name="r" value="0" />
+            <label for="no15">No</label>
+          </div>
+        </div>
+      </div>
+      <div class="question hidden" id="question10">
+        <div class="text">
+          <p>H/O Previous pregnancies?</p>
+        </div>
+
+        <div class="inp" style="display: flex">
+          <div style="width: 50%; display: flex">
+            <input type="radio" id="yes16" name="s" value="1" required />
+            <label id="2" for="yes16">Yes</label>
+          </div>
+          <div style="display: flex">
+            <input type="radio" id="no17" name="s" value="0" />
+            <label for="no17">No</label>
+          </div>
+        </div>
+      </div>
+      <div class="question hidden" id="question11">
+        <div class="text">
+          <p>Heart rate?</p>
+        </div>
+
+        <div class="inp" style="display: flex">
+          <div style="width: 50%; display: flex">
+            <input type="radio" id="yes18" name="j" value="0" required />
+            <label id="2" for="yes18">Normal</label>
+          </div>
+          <div style="display: flex">
+            <input type="radio" id="no18" name="j" value="1" />
+            <label for="no18">Tachycardia</label>
+          </div>
+        </div>
+      </div>
+      <div class="question hidden" id="question12">
+        <div class="text">
+          <p>What is the patient level of risk?</p>
+        </div>
+
+        <div class="inp" style="display: flex">
+          <div style="width: 50%; display: flex">
+            <input type="radio" id="yes19" name="k" value="0" required />
+            <label id="2" for="yes19">High</label>
+          </div>
+          <div style="display: flex">
+            <input type="radio" id="no19" name="k" value="1" />
+            <label for="no19">Low</label>
+          </div>
+        </div>
+      </div>
+      <div class="question hidden" id="question13">
+        <div class="text">
+          <p>Gender?</p>
+        </div>
+
+        <div
+          class="inp"
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          "
+        >
+          <div style="width: 80%; display: flex">
+            <input type="radio" id="yes20" name="l" value="Female" required />
+            <label id="2" for="yes20">Female</label>
+          </div>
+          <div style="width: 80%; display: flex">
+            <input type="radio" id="no20" name="l" value="Male" />
+            <label for="no20">Male</label>
+          </div>
+          <div style="width: 50%; display: flex">
+            <input type="radio" id="no21" name="l" value="Not answer" />
+            <label for="no21">Not answer</label>
+          </div>
+        </div>
+      </div>
+      <div class="question hidden" id="question14">
+        <div class="text">
+          <p>Did the patient experience asphyxia during childbirth?</p>
+        </div>
+
+        <div
+          class="inp"
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          "
+        >
+          <div style="display: flex">
+            <input type="radio" id="yes22" name="m" value="No" required />
+            <label id="2" for="yes22">No</label>
+          </div>
+          <div style="display: flex">
+            <input type="radio" id="no23" name="m" value="Yes" />
+            <label for="no23">Yes</label>
+          </div>
+          <div style="display: flex">
+            <input type="radio" id="no24" name="m" value="Not available" />
+            <label for="no24">Not available</label>
+          </div>
+        </div>
+      </div>
+      <div class="question hidden" id="question15">
+        <div class="text">
+          <p>Folic acid test?</p>
+        </div>
+
+        <div class="inp" style="display: flex">
+          <div style="width: 50%; display: flex">
+            <input type="radio" id="yes25" name="n" value="0" required />
+            <label id="2" for="yes25">Normal</label>
+          </div>
+          <div style="display: flex">
+            <input type="radio" id="no26" name="n" value="1" />
+            <label for="no26">Anemia</label>
+          </div>
+        </div>
+      </div>
+      <div class="question hidden" id="question16">
+        <div class="text">
+          <p>Birth defects?</p>
+        </div>
+
+        <div class="inp" style="display: flex">
+          <div style="width: 50%; display: flex">
+            <input type="radio" id="yes27" name="t" value="1" required />
+            <label id="2" for="yes27">single</label>
+          </div>
+          <div style="display: flex">
+            <input type="radio" id="no28" name="t" value="0" />
+            <label for="no28">Multible</label>
+          </div>
+        </div>
+      </div>
+      <div class="question hidden" id="question17">
+        <div class="text">
+          <p>blood test result?</p>
+        </div>
+
+        <div
+          class="inp"
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          "
+        >
+          <div style="display: flex">
+            <input type="radio" id="yes29" name="u" value="Normal" required />
+            <label id="2" for="yes29">Normal</label>
+          </div>
+          <div style="display: flex">
+            <input
+              type="radio"
+              id="no30"
+              name="u"
+              value="Slightly Abnormal"
+            />
+            <label for="no30">Slightly Abnormal</label>
+          </div>
+          <div style="display: flex">
+            <input type="radio" id="yes31" name="u" value="Abnormal" />
+            <label id="2" for="yes31">Abnormal</label>
+          </div>
+          <div style="display: flex">
+            <input type="radio" id="no32" name="u" value="Inconclusive" />
+            <label for="no32">Inconclusive</label>
+          </div>
+        </div>
+      </div>
+      <div class="question hidden" id="question18">
+        <div class="question">
+          <div class="form">
+            <div class="form-content">
+              <div class="textt">
+                <input
+                  required
+                  type="number"
+                  required
+                  placeholder="patient Age?"
+                  name="a"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="question hidden" id="question19">
+        <div class="question">
+          <div class="form">
+            <div class="form-content">
+              <div class="textt">
+                <input
+                  required
+                  type="number"
+                  required
+                  placeholder="blood cell count (mcl)?"
+                  name="b"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="question hidden" id="question20">
+        <div class="question">
+          <div class="form">
+            <div class="form-content">
+              <div class="textt">
+                <input
+                  required
+                  type="number"
+                  required
+                  placeholder="white blood cell count(thousand per microliter)?"
+                  name="c"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="buttons-container pt-4">
+      </form>
+        <button class="nav-button" id="prevButton" onclick="prevQuestion()">
+          Previous
+        </button>
+        <button class="nav-button" id="nextButton" onclick="nextQuestion()">
+          Next
+        </button>
+        <button class="submit-button hidden" id="submitButton" type="submit">Submit</button>
+      </div>
+    </div>
+
+  <script src="{%  static 'js\prediction.js' %}"></script>
+</div>
+{% endblock content %}

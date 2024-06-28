@@ -1,0 +1,164 @@
+{% extends 'baseForHome.html' %}
+{% load static %}
+{% block title %} about {% endblock title %}
+
+{% block content %}
+<section class="about-container">
+    <div class="left-about">
+      <div class="article">
+        <div class="article-1">
+          <h2 class="text-center py-3">
+            Understanding Hereditary Genetic Diseases: Mechanisms, Impacts,
+            and Therapeutic Prospects
+          </h2>
+          <img src="{% static 'images/istockphoto-1284442152-1024x1024.jpg' %}" alt="">
+          <h4>Abstract</h4>
+          <p>
+            Hereditary genetic diseases are a class of disorders caused by
+            mutations in genes that are inherited from parents to offspring.
+            This paper provides an overview of the mechanisms underlying
+            hereditary genetic diseases, their impacts on individuals and
+            society, and the current therapeutic prospects for managing these
+            conditions. We delve into the molecular basis of these diseases,
+            exploring the role of genetics, environmental factors, and
+            epigenetics in disease manifestation. Additionally, we discuss the
+            challenges associated with diagnosis, treatment, and prevention,
+            highlighting the need for ongoing research and advancements in
+            genomic medicine.
+          </p>
+          <p>
+            Hereditary genetic diseases encompass a diverse range of disorders
+            that arise from alterations in the genetic code passed down
+            through generations. These diseases can manifest in various organ
+            systems and present significant challenges in terms of diagnosis,
+            management, and treatment. Understanding the molecular mechanisms
+            underlying these diseases is crucial for developing targeted
+            therapies and improving patient outcomes.
+          </p>
+        </div>
+        <div class="article-2">
+          <h4>Molecular Basis of Hereditary Genetic Diseases</h4>
+          <p>
+            Hereditary genetic diseases result from mutations in specific
+            genes that encode essential proteins involved in various cellular
+            functions. These mutations can occur spontaneously or be inherited
+            from parents who carry the defective gene(s). The types of
+            mutations, such as point mutations, insertions, deletions, and
+            chromosomal abnormalities, dictate the phenotype and severity of
+            the disease.
+          </p>
+        </div>
+        <div class="article-3">
+          <h4>Impact on Individuals and Society</h4>
+          <p>
+            Hereditary genetic diseases can have profound effects on
+            individuals and society as a whole. They often lead to chronic
+            health conditions, reduced quality of life, and increased
+            healthcare costs. Moreover, these diseases can impose emotional
+            and financial burdens on families, necessitating comprehensive
+            support systems and healthcare interventions.
+          </p>
+        </div>
+        <div class="article-4">
+          <h4>Diagnostic Challenges and Advances</h4>
+          <p>
+            Diagnosing hereditary genetic diseases presents several challenges
+            due to the complexity of genetic variations and overlapping
+            clinical features. However, advances in genomic technologies, such
+            as next-generation sequencing and genetic testing, have
+            revolutionized diagnostic approaches, enabling more accurate and
+            timely identification of disease-causing mutations.
+          </p>
+        </div>
+        <div class="article-5">
+          <h4>Therapeutic Prospects</h4>
+          <p>
+            The development of targeted therapies, gene editing techniques
+            (e.g., CRISPR-Cas9), and gene therapies holds promise for treating
+            hereditary genetic diseases. These approaches aim to correct or
+            mitigate the effects of genetic mutations, offering potential
+            cures or long-term disease management strategies. Additionally,
+            precision medicine initiatives are tailoring treatments based on
+            individual genetic profiles, optimizing therapeutic outcomes.
+          </p>
+        </div>
+        <div class="article-6">
+          <h4>Future Directions and Challenges</h4>
+          <p>
+            Despite significant progress, challenges remain in addressing
+            hereditary genetic diseases comprehensively. These challenges
+            include ethical considerations in genetic testing and therapy,
+            accessibility to advanced healthcare technologies, and the need
+            for global collaboration in research and treatment development.
+            Future efforts should focus on integrating genomic data into
+            clinical practice, expanding genetic education and counseling
+            services, and fostering multidisciplinary collaborations to tackle
+            these complex diseases effectively.
+          </p>
+        </div>
+        <div class="article-7">
+          <h4>Conclusion</h4>
+          <p>
+            Hereditary genetic diseases pose multifaceted challenges that
+            require a multidisciplinary approach involving genetics, medicine,
+            ethics, and public health. Advances in molecular biology,
+            genomics, and therapeutic modalities offer hope for improved
+            diagnosis, treatment, and prevention of these diseases. Continued
+            research, advocacy, and investment in genomic medicine are
+            essential to mitigate the burden of hereditary genetic diseases on
+            individuals and society.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="right-about">
+      <div class="right-1">
+        <a href="http://ghr​.nlm.nih.gov​/condition/down-syndrome">
+          <img class="Down-syndrome"  src="{% static 'images/Down syndrome.jpg' %}" alt="">
+         <p> Genetics home reference: Down syndrome. Bethesda (MD): U.S. National
+          Library of Medicine (NLM); Sep 29, 2014. [Accessed 2014 Sep 30]
+          </p>
+        </a>
+      </div>
+      <div class="right-2">
+        <a href="https://onlinelibrary.wiley.com/doi/10.1111/j.1399-0004.2006.00708.x" class="book py-3">
+          <h6>Clinical Genetics</h6>
+          <div class="image-book text-center">
+            <img src="{% static 'images/bookk.jpg' %}" />
+            <p>The modular nature of genetic diseases</p>
+          </div>
+        </a>
+      </div>
+      <div class="right-3">
+        <a href=" http://ghr​.nlm.nih.gov​/handbook/genomicresearch/sequencing.">
+          <img src="{% static 'images/stacks-books-shelves.jpg' %}" alt="" srcset="">
+        <p>Genetics home reference: what advances are being made in DNA
+          sequencing. Bethesda (MD): U.S. National Library of Medicine (NLM);
+          Sep 29, 2014. [Accessed 2014 Oct 01]</p>
+        </a>
+        </p>
+      </div>
+      <div class="right-4">
+        <a href="https://pubmed.ncbi.nlm.nih.gov/17693740/">
+          <img src="{% static 'images/laboratory-supplies-medical-work.jpg' %}" alt="">
+          <p> Shen L, Waterland RA. Methods of DNA methylation analysis. Curr Opin
+          Clin Nutr Metab Care. 2007 Sep;10:576–81.
+          [PubMed]</p>
+        </a>
+      </div>
+      <div class="right-5 text-center">
+         <h3>Some names of genetic diseases</h3>
+         <h6 class="text-black"><a href="{% url 'Alzheimer' %}">1-Alzheimer's</a></h6>
+         <h6 class="text-black"><a href="{% url 'Cancer' %}">2-Cancer</a></h6>
+         <h6 class="text-black"><a href="{% url 'CysticFibrosis' %}">3-Cystic fibrosis</a></h6>
+         <h6 class="text-black"><a href="{% url 'Diabetes' %}">4-Diabetes</a></h6>
+         <h6 class="text-black"><a href="{% url 'Hemochromatosis' %}">5-Hemochromatosis</a></h6>
+         <h6 class="text-black"><a href="{% url 'LeberHereditaryOpticNeuropathy' %}">6-Leber's hereditary optic neuropathy</a></h6>
+         <h6 class="text-black"><a href="{% url 'LeighSyndrome' %}">7-Leigh syndrome</a></h6>
+         <h6 class="text-black"><a href="{% url 'MitochondrialMyopathy' %}">8- Mitochondrial myopathy</a></h6>
+         <h6 class="text-black"><a href="{% url 'TaySachs' %}">9-Tay-Sachs</a></h6>
+      </div>
+  </div>
+    </div>
+  </section>
+{% endblock content %}

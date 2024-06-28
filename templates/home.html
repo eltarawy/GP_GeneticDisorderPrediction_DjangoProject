@@ -1,0 +1,60 @@
+{% extends 'baseForHome.html' %}
+{% load static %}
+{% block title %} gentic {% endblock title %}
+
+{% block content %}
+<section id="home">
+  <div class="containerhome" style="background-image: url( '{% static "images/p(2).jpeg" %}' );">
+    <div class="layer">
+      <div class="text1">
+        <h1 class="Maintext">Gentic</h1>
+        <h4>Unveil The Genetic Mysteries Shaping Your Destiny.</h4>
+        <h6>Decode the secrets within your DNA Safeguard your tomorrow.</h6>        
+      </div>
+    </div>
+  </div>
+</section>
+<div class="details">
+  <div class="image1">
+    <div class="imagedetails" >
+      <img src="{% static 'images/p1 (4).jpeg' %}" alt="" srcset="" />
+    </div>
+    <div class="text-details">
+      <div class="details-img">
+        <h2>Genetic disorders</h2>
+        <h4>
+          The intricate instructions within our DNA sometimes take unexpected turns. 
+          These changes, called mutations, can lead to genetic diseases. 
+          Inherited or spontaneous, they come in various forms,
+           each affecting different parts of the body and causing a range of symptoms,
+            from mild to severe. While there's often no cure, treatments can manage symptoms,
+             and research continues to develop new solutions. If you have concerns, 
+             talk to a doctor or genetic counselor for guidance.
+        </h4>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="details2">
+  <div class="image2">
+    <div class="text-details-2">
+      <div class="details-img-2">
+        <h2>Genetic disorders</h2>
+        <h4>
+          Genetic diseases can profoundly impact individuals and families,
+           shaping their lives in ways that are both visible and deeply personal. 
+           As we look at this picture, we're reminded of the complex web of genetics that govern our health and well-being. 
+           These diverse manifestations highlight the intricate nature of genetic disorders, 
+          from physical deformities to neurological challenges.
+        </h4>
+      </div>
+    </div>
+    <div class="imagedetails2">
+      <img src="{% static 'images/p1.jpeg' %}" alt="" srcset="" />
+    </div>
+  </div>
+</div>
+<div class="footer-home">
+  <h3>Copyright by omnya abdulkhalk 2024 Gentic. All Rights Reserved.</h3>
+</div>
+{% endblock content %}

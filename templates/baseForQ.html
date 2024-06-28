@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %} {% endblock title %}</title>
+    <link rel="stylesheet" href="{% static 'css/all.min1.css/' %}" />
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min1.css/' %}" />
+    <link rel="stylesheet" href="{% static 'css/style.css/' %}" />
+  </head>
+  <body  id="bg" style="background-image: url( '{% static "images/5052197.jpg" %}' );">
+    <section id="home" > 
+      <!--navbar-->
+      <div class="layer">
+          <nav class="navbar fixed-top  navbar-expand-lg bg-opacity-100  m-auto pt-4 border-bottom border-light-subtle top-0">
+             <div class="container justify-content-center align-items-center w-100 mb-1">
+                <a class="navbar-brand " href="{% url 'home' %}">
+                  <img  src="{% static 'images/microscope_947539.png' %}" alt="gentic">
+                  <h1 class="name-brand">Gentic</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ms-auto me-3 mb-2 mb-lg-0">
+                    <li class="nav-item m-1">
+                      <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+                    </li>
+                    <li class="nav-item m-1">
+                      <a class="nav-link active" aria-current="page" href="{% url 'about' %}">About</a>
+                    </li>
+                    <li class="nav-item m-1">
+                      <a class="nav-link active" aria-current="page" href="{% url 'prediction' %}">prediction</a>
+                    </li>
+                    <li class="nav-item m-1">
+                      <a class="nav-link active" aria-current="page" href="{% url 'diseases' %}">Diseases</a>
+                    </li>
+                    <li class="nav-item m-1">
+                      <a class="nav-link active" aria-current="page" href="{% url 'contact' %}">Contact Us</a>
+                    </li>
+                    {% if user.is_authenticated %}
+                   
+                    <li class="nav-item m-1">
+                      <a class="nav-link active" aria-current="page" href="{% url 'logout' %}">logout</a>
+                    </li>
+                    
+                    {% endif %}
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <div>
+        </section>
+    {% block content %}
+    {% endblock content %}      
+</body>
+</html>

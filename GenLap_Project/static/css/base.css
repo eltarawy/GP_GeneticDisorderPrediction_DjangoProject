@@ -1,0 +1,183 @@
+@import url(//fonts.googleapis.com/css?family=Muli);
+
+/* Base css */
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: helvetica, sans-serif;
+}
+
+p{
+    line-height: 1.8;
+}
+
+a{
+    color: #c37cb2;
+    text-decoration: none;
+}
+a:hover{
+    color: #026efd;
+}
+
+h1, h2, h3, h4, h5, h6 { font-family: 'muli', sans-serif; font-weight: normal; }
+
+h1{
+    border-bottom: 1px 0;
+    padding: 0 0 10px 0;
+    margin: 10px 0 20px 0;
+}
+
+h2{
+    margin: 10px 0 20px 0;
+}
+
+ol{
+    line-height: 1.5;
+}
+
+/*  css for header */
+#header{
+    padding: 10px 100px;
+    font-size: 20px;
+    background: #026efd;
+    color: #fff;
+    border-bottom: 10px solid #026efd;
+    overflow: auto;
+}
+
+#header .logo{
+    font-family: 'Muli', sans-serif;
+    float: left;
+    color: #f3f7cc;
+    font-size: 28px;
+    margin-left: 40%;
+    font-weight: bolder;
+    margin-top: 2%;
+}
+
+#header ul.menu{
+    list-style: none;
+    float: left;
+    margin-left:15%;
+    margin-top: 25%;
+}
+
+#header ul.menu li{
+    float: left;
+    padding: 4px 10px;
+}
+
+#header ul.menu li.selected a, #header ul.menu li.selected a:hover{
+    color: #e7eaee;
+    font-weight: bold;
+}
+
+#heade a{
+    color: #f3f7cc;
+}
+
+#heade a:hover{
+    color: #fff;
+}
+
+#header .user {
+    float: right;
+    padding-top: 4px;
+}
+
+/* css for content */
+#content{
+    padding: 30px 100px;
+}
+
+/* css for forms*/
+form{
+    overflow: auto;
+}
+
+form p {
+    width: 100%;
+    overflow: auto;
+}
+
+label{
+    float: left;
+    clear: both;
+    color: #333;
+    margin-bottom: 4px;
+}
+input, textarea{
+    clear: both;
+
+    margin: 0 15px 10px;
+    background: #efefef;
+    border: 0;
+    padding: 6px 10px;
+    font-size: 14px;
+}
+
+input[type=submit], a.button{
+    font-weight: bold;
+    background: #026efd;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.errorlist{
+    color: #cc0033;
+    float: left;
+    clear: both;
+    padding-left: 10px;
+}
+
+.helptext{
+    margin:0 0 20px 0;
+    color: #aaa;
+    clear: both;
+    float: left;
+    font-size: 13px;
+}
+
+/* css for massages */
+
+ul.messages li.success,
+ul.messages li.warning,
+ul.messages li.error,
+ul.messages li.info{
+    margin: 0;
+    padding: 14px 20px;
+    list-style: none;
+    color: #fff;
+}
+
+
+ul.messages li.success{ background: #81ce81;}
+ul.messages li.success a{ color: #bac33e;}
+
+ul.messages li.error{ background: #a30029;}
+ul.messages li.error a{color: #e98404;}
+
+ul.messages li.info{background: #faffae; color: #696b4e;}
+ul.messages li.info a{color: #1586de;}
+
+ul.messages li.warning{background: #de9404;}
+ul.messages li.warning a{color: #f49000;}
+
+ul.messages li a.clos{
+    margin: 0;
+    float: right;
+    opacity: 1;
+    border: 0;
+    box-shadow: none;
+    text-shadow: none;
+}
+
+.login-form{
+    float: left;
+}
+
+
+
