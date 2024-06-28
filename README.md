@@ -13,31 +13,27 @@ There are people who are genetically susceptible to the disease as a result of t
 
 ## Features
 User Survey:
-
 Application asks the user 20 questions to gather necessary information.
+
 Disease Prediction:
-
 Uses collected data to predict if the user might have a hereditary disease in the future.
+
 Responsive Design:
-
 The web app is designed to be fully responsive and can be accessed on various devices (desktops, tablets, and smartphones).
+
 User Authentication:
+Secure user login, logout and registration system.
 
-Secure user login and registration system.
 Data Privacy:
-
 Ensures that all user data is encrypted and stored securely.
+
 Detailed Results:
-
 Provides detailed prediction results with explanations.
+
 Interactive UI:
-
 User-friendly and interactive interface for easy navigation.
-Error Handling:
 
-Robust error handling.
 Disease Information Pages:
-
 Contains detailed pages about the diseases predicted by the application, providing users with valuable information on each condition.
 
 
