@@ -1,17 +1,17 @@
 # Genetic Disorder Prediction
 <div align="center">
-<img width="30%" src="https://github.com/mahmoudhaney/Jobs/assets/83553963/b6d3c7b7-1f2f-4981-8c1b-5552eb0546cc">
+<img width="30%" src="">
 </div>
 
 ## Introduction
-Whether you're just starting out in your career, looking for a change, or trying to advance to the next level, we have thousands of jobs to choose from in various industries and locations.
+[Whether you're just starting out in your career, looking for a change, or trying to advance to the next level, we have thousands of jobs to choose from in various industries and locations.
 
 Our easy-to-use search tools make finding jobs matching your skills and interests simple. And with our advanced filtering options, you can narrow down your search results to find the perfect job for you.
 
-Once you've found a few jobs you're interested in, you can easily apply online or contact the employer directly. We also offer a variety of resources to help you prepare for your job search, including resume and cover letter writing tips, interview advice, and more.
+Once you've found a few jobs you're interested in, you can easily apply online or contact the employer directly. We also offer a variety of resources to help you prepare for your job search, including resume and cover letter writing tips, interview advice, and more.](url)
 
 ## Features
-- Users
+[- Users
   - Thousands of jobs to choose from
   - Easy-to-use search tools
   - Advanced filtering options
@@ -21,3 +21,4 @@ Once you've found a few jobs you're interested in, you can easily apply online o
   - Operations on Jobs Categories (Post, Edit, Update, Delete, etc.)
   - Operations on Jobs (Post, Edit, Update, Delete, etc.)
   - List all job Applications.
+](url)
