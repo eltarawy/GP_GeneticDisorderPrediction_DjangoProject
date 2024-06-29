@@ -12,32 +12,30 @@ There are people who are genetically susceptible to the disease as a result of t
 
 
 ## Features
-User Survey:
+- User Survey:<br>
 Application asks the user 20 questions to gather necessary information.
-
-Disease Prediction:
+- Disease Prediction:<br>
 Uses collected data to predict if the user might have a hereditary disease in the future.
-
-Responsive Design:
+- Responsive Design:<br>
 The web app is designed to be fully responsive and can be accessed on various devices (desktops, tablets, and smartphones).
-
-User Authentication:
+- User Authentication:<br>
 Secure user login, logout and registration system.
-
-Data Privacy:
+- Data Privacy:<br>
 Ensures that all user data is encrypted and stored securely.
-
-Detailed Results:
+- Detailed Results:<br>
 Provides detailed prediction results with explanations.
-
-Interactive UI:
+- Interactive UI:<br>
 User-friendly and interactive interface for easy navigation.
-
-Disease Information Pages:
+- Disease Information Pages:<br>
 Contains detailed pages about the diseases predicted by the application, providing users with valuable information on each condition.
 
-
-
+## Technologies
+- `Django==5.0`
+- `pillow==10.2.0`
+- `joblib==1.3.2`
+- `python-dateutil==2.8.2`
+- `scikit-learn==1.3.0`
+- DB `sqlite3`
 
 
 
