@@ -31,10 +31,12 @@ Contains detailed pages about the diseases predicted by the application, providi
 
 ## Technologies
 - `Django==5.0`
+- `Python 3.11.9`
+- `python-dateutil==2.8.2`
 - `pillow==10.2.0`
 - `joblib==1.3.2`
-- `python-dateutil==2.8.2`
 - `scikit-learn==1.3.0`
+- `django template language`
 - DB `sqlite3`
 
 
