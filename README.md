@@ -16,8 +16,6 @@ There are people who are genetically susceptible to the disease as a result of t
 Application asks the user 20 questions to gather necessary information.
 - Disease Prediction:<br>
 Uses collected data to predict if the user might have a hereditary disease in the future.
-- Responsive Design:<br>
-The web app is designed to be fully responsive and can be accessed on various devices (desktops, tablets, and smartphones).
 - User Authentication:<br>
 Secure user login, logout and registration system.
 - Data Privacy:<br>
